@@ -56,7 +56,7 @@ function initNavigation() {
             } else {
                 document.body.style.overflow = '';
             }
-        });
+    });
     }
 
     // Navbar scroll effect
@@ -647,17 +647,17 @@ function updateThemeIcon(theme) {
 document.addEventListener('DOMContentLoaded', function() {
     // Wait a bit to ensure all elements are loaded
     setTimeout(() => {
-        initTheme();
-        initNavigation();
-        initScrollEffects();
-        initParallaxEffects();
-        initAnimations();
-        initHoverEffects();
-        initContactForm();
-        initBackToTop();
-        initLoadingAnimations();
-        initAccessibility();
-        initPerformanceOptimizations();
+    initTheme();
+    initNavigation();
+    initScrollEffects();
+    initParallaxEffects();
+    initAnimations();
+    initHoverEffects();
+    initContactForm();
+    initBackToTop();
+    initLoadingAnimations();
+    initAccessibility();
+    initPerformanceOptimizations();
         setHeroImage();
         initFooterSlideshow();
     }, 100);
