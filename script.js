@@ -660,6 +660,18 @@ document.addEventListener('DOMContentLoaded', function() {
     initPerformanceOptimizations();
         setHeroImage();
         initFooterSlideshow();
+        // Add scroll-down button functionality
+        const heroScrollBtn = document.querySelector('.hero-scroll');
+        const aboutSection = document.getElementById('about');
+        if (heroScrollBtn && aboutSection) {
+            heroScrollBtn.addEventListener('click', function() {
+                const offsetTop = aboutSection.offsetTop - 60; // adjust for nav height
+                window.scrollTo({
+                    top: offsetTop,
+                    behavior: 'smooth'
+                });
+            });
+        }
     }, 100);
 });
 
